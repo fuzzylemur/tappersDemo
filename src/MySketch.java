@@ -9,6 +9,7 @@ public class MySketch extends PApplet{
     float SCALE_FACTOR = 10f;
     float DEFAULT_SIZE = 2f;
     float MIN_SIZE = 0.8f;
+    String BGpath = "img/img4.png";
 
     Tapper[] tappers = new Tapper[MAX_TAPPERS];
     LedGrid[] gridArray = new LedGrid[100];
@@ -21,7 +22,7 @@ public class MySketch extends PApplet{
 
     public void settings(){
         size(WIDTH, HEIGHT);
-        BGimg = loadImage("img/img1.png");
+        BGimg = loadImage(BGpath);
     }
 
     public void draw(){
